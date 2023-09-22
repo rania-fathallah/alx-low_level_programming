@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h> /* For the itoa function */
-#include "main.h"
+#include "lists.h"
 
 /**
  * list_len - Calculates the number of elements in a linked list.
@@ -10,13 +8,12 @@
  */
 size_t list_len(const list_t *h)
 {
-    const list_t *k = h;
     size_t count = 0;
 
-    while (k != NULL)
+    while (h != NULL)
     {
         count += 1;
-        k = k->next;
+        h = h->next;
     }
 
     return count; /* Return the count as an integer */
