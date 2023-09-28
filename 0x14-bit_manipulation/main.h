@@ -1,5 +1,5 @@
-#ifndef BIT_MANIPULATION
-#define BIT_MANIPULATION
+#ifndef MAIN_H
+#define MAIN_H
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -12,6 +12,5 @@ int set_bit(unsigned long int *n, unsigned int index);
 int clear_bit(unsigned long int *n, unsigned int index);
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
 int get_endianness(void);
-#endif
 
-#endif /* HOLBERTON_H */
+#endif /* MAIN_H */
